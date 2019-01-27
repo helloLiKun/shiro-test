@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
@@ -8,7 +8,7 @@
 <form action="/sys/login-submit">
     <lebal>姓名:</lebal><input name="name">
     <lebal>密码：</lebal><input name="pwd">
-    <button type="submit">登录</button>
+    <button type="submit">登录</button><lebal th:text="${msg}"></lebal>
 </form>
 </body>
 </html>
